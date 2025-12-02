@@ -3,17 +3,18 @@
 declare(strict_types=1);
 
 // load functions
-require_once dirname(__DIR__, 1) . "/vendor/autoload.php";
-require_once "stats.php";
-require_once "card.php";
+require_once dirname(__DIR__) . "/vendor/autoload.php";
+require_once __DIR__ . "/stats.php";
+require_once __DIR__ . "/card.php";
 
 // load .env
-$dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__, 1));
+$dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->safeLoad();
 
 // if environment variables are not loaded, display error
-if (!isset($_ENV["TOKEN"])) {
-    $message = file_exists(dirname(__DIR__, 1) . "/.env")
+$token = $_SERVER["TOKEN"] ?? $_ENV["TOKEN"] ?? null;
+if ($token === null) {
+    $message = file_exists(dirname(__DIR__) . "/.env")
         ? "Missing token in config. Check Contributing.md for details."
         : ".env was not found. Check Contributing.md for details.";
     renderOutput($message, 500);
