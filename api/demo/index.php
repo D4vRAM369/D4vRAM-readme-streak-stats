@@ -47,19 +47,19 @@ function camelToSkewer(string $str): string
     </script>
     <title>GitHub Readme Streak Stats Demo</title>
     <link href="https://css-gg-cdn.pages.dev/css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css?v=<?= filemtime("./css/style.css") ?>">
-    <link rel="stylesheet" href="./css/toggle-dark.css?v=<?= filemtime("./css/toggle-dark.css") ?>">
+    <link rel="stylesheet" href="/demo/css/style.css?v=<?= filemtime("./css/style.css") ?>">
+    <link rel="stylesheet" href="/demo/css/toggle-dark.css?v=<?= filemtime("./css/toggle-dark.css") ?>">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="mask-icon" href="icon.svg" color="#fb8c00">
+    <link rel="apple-touch-icon" sizes="180x180" href="/demo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/demo/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/demo/favicon-32x32.png">
+    <link rel="mask-icon" href="/demo/icon.svg" color="#fb8c00">
 
-    <script type="text/javascript" src="./js/script.js?v=<?= filemtime("./js/script.js") ?>" defer></script>
-    <script type="text/javascript" src="./js/accordion.js?v=<?= filemtime("./js/accordion.js") ?>" defer></script>
-    <script type="text/javascript" src="./js/toggle-dark.js?v=<?= filemtime("./js/toggle-dark.js") ?>" defer></script>
-    <script type="text/javascript" src="./js/jscolor.min.js?v=<?= filemtime("./js/jscolor.min.js") ?>" defer></script>
+    <script type="text/javascript" src="/demo/js/script.js?v=<?= filemtime("./js/script.js") ?>" defer></script>
+    <script type="text/javascript" src="/demo/js/accordion.js?v=<?= filemtime("./js/accordion.js") ?>" defer></script>
+    <script type="text/javascript" src="/demo/js/toggle-dark.js?v=<?= filemtime("./js/toggle-dark.js") ?>" defer></script>
+    <script type="text/javascript" src="/demo/js/jscolor.min.js?v=<?= filemtime("./js/jscolor.min.js") ?>" defer></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
